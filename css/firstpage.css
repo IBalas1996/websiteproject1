@@ -16,6 +16,7 @@ body {
 	ul{
 		margin: 0px;
 		padding: 0px;
+		list-style-type: none;
 	}
 	.button_1{
 		height: 38px;
@@ -31,6 +32,7 @@ body {
 		color: #fff;
 		margin-top: 10px;
 		margin-bottom: 10px;
+		list-style-type: none;
 	}
 
 	/* Header */
@@ -73,7 +75,7 @@ body {
 		color: #d7f3f5;
 		font-weight: bold;
 	}
-	header a: hover{
+	header a:hover{
 		color: #ccc;
 		font-weight: bold;
 
@@ -82,14 +84,8 @@ body {
 	/* Showcase */
 	#showcase{
 		min-height: 300px;
-		background:url('./img/beach.jpg') no-repeat 0 -250px; 
+		background:url('../img/beach.jpg') no-repeat 0 -250px; 
 		background-size: auto;
-		/*width: 100%; 
-    	height: 100%; 
-    	position: absolute; 
-    	margin-left: 10px; 
-    	top: 10px; 
-    	z-index: -1;*/
 		text-align: center;
 	}
 	#showcase h1 {
@@ -99,8 +95,9 @@ body {
 		margin-bottom: 10px;
 	}
 	#showcase p {
-		color: #d7f3f5;
+		color: #7499b2;
 		font-size: 20px;
+		background: linear-gradient(#d7f3f5, #fff);
 	}
 
 	/*Newsletter*/
@@ -109,7 +106,7 @@ body {
 		color: #fff;
 		background: #76a09b;
 	}
-	#newsletter h1{
+	#newsletter h2{
 		float: left;
 		margin-top: 10px;
 	}
@@ -127,7 +124,7 @@ body {
 		#boxes{
 			min-height: 100px;
 			margin-top: 20px;
-			background:url('./img/sand.jpg') no-repeat 0 -250px;
+			background:url('../img/sand.jpg') no-repeat 0 -250px;
 			background-size: auto;
 
 		}
@@ -144,49 +141,47 @@ body {
 			width: 120px;
 		}
 
-		/*  Sidebar  */
-		aside#sidebar{
-			float: right;
-			width: 30%;
-			margin-top: 10px;
+		#boxes .box p{
+			color: #c2c9e8;
+		}
+		#boxes .box a{
+			animation-name: anime;
+			animation-duration: 4s;
+
 		}
 
-		aside#sidebar .quote input, aside#sidebar .quote textarea{
+		#boxes .box img:hover {
+			animation-name: anime;
+			animation-duration: 4s;
 
-			width: 90%;
-			padding: 5px;
 		}
 
-		/* Main Column */
-		article#main-column{
-			float:left;
-			width: 65%;
+		@keyframes  anime {
+			0%  {background-color: #ccc; left: 0px; right: 0px;}
+			25%  {background-color: #ccc; left: 200px; right: 0px;}
+			50%  {background-color: #ccc; left: 200px; right: 200px;}
+			75%  {background-color: #76a09b; left: 0px; right: 200px;}
+			100%  {background-color: #76a09b; left: 0px; right: 0px;}
 		}
-
 		/* Footer*/
 
 		footer{
 			padding: 10px;
 			margin-top: 20px;
-			color: ##3d7072;
+			color: #3d7072;
 			background-color: #d7f3f5;
 			text-align: center;
 		}
-
-
-		/* Services */
-		ul#services li{
-			list-style: none;
-			padding: 20px;
-			border: #3d5051 solid 1px;
-			margin-bottom: 5px;
-			background: #638c8e;
+		footer a img{
+			float: right;
+			width: 42px;
+			height: 42px;
+			border: 0;
 		}
+		/* Media Query*/
 
-		/* Media Queries */
-
-		/* ...if being displayed on a mobile device... */
-		@media(max-width: 768px){
+		/* ...if being displayed on a mobile device/tablet... */
+		@media(max-width: 750px){
 			header #branding, header nav, header nav li,
 			#newsletter h1, #newsletter form,
 			#boxes .box,
