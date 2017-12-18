@@ -1,0 +1,28 @@
+/* Main Column */
+		article#main-column{
+			float:left;
+			width: 65%;
+			text-align: center;
+			border: 2px solid  #fff;
+			box-shadow: 0 8px #fff;
+	}
+		article#main-column li{
+			list-style-type: none;
+
+		}
+		article#main-column img{
+			width: 120px;
+		}
+
+/*  Sidebar  */
+		aside#sidebar{
+			float: right;
+			width: 30%;
+			margin-top: 10px;
+		}
+
+		aside#sidebar .quote input, aside#sidebar .quote textarea{
+
+			width: 90%;
+			padding: 5px;
+		}

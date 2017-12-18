@@ -1,0 +1,30 @@
+/* Services */
+		ul#services ol{
+			position: relative;
+			right: 23px;
+		}
+		ul#services li{
+			list-style: none;
+			padding: 20px;
+			border: #3d5051 solid 1px;
+			margin-bottom: 5px;
+			margin-left: -20px;
+			background: #638c8e;
+		}
+/* Light Box Effect*/
+		#lightBoxBg{
+			position: absolute;
+			background-color: #76a09b;
+			height: 100%;
+			width: 100%;
+			top: 0px;
+			left: 0px;
+			opacity: 0.5;
+			display: none;
+		}
+		#lightBox{
+			position: absolute;
+			top: 25%;
+			left: 40%;
+			display: none;
+		}
